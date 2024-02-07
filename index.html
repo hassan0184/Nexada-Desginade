@@ -299,21 +299,10 @@
                 white;
         }
 
-        @media screen and (max-width: 576px) {
-            #SVGMain {
-                transform:
-                    scale(0.6) !important;
-            }
-        }
-
+        /* Default styles */
         .text-block {
             font-size: 80px;
             line-height: 120px;
-        }
-
-        .animationHeight {
-            height:
-                400vh;
         }
 
         .hover-img {
@@ -325,24 +314,62 @@
             border-radius: 10px;
         }
 
-
-        /*
-        ::-webkit-scrollbar
-        {
-        width:
-        0;
-        }
-        ::-webkit-scrollbar-thumb
-        {
-        background:
-        0
-        0;
+        .services-heading {
+            line-height: 140px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: "Sharpsansno 1 Book", sans-serif;
+            font-size: 62px;
+            font-weight: 400;
         }
 
-        *\
-    </style>
-    <style>
-        /*lenis -- IMPORTANT*/
+        /* Media query for smaller screens (e.g., mobile devices) */
+        @media screen and (max-width: 768px) {
+            .text-block {
+                font-size: 30px;
+                /* Adjust font size for smaller screens */
+                line-height: 60px;
+                /* Adjust line height accordingly */
+                /* Additional styles for smaller screens */
+            }
+
+            .services-heading {
+
+                line-height: 80px;
+                font-size: 40px;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-family: "Sharpsansno 1 Book", sans-serif;
+                font-weight: 400;
+            }
+
+            .hover-img {
+                width: 200px;
+                /* Adjust width for smaller screens */
+                height: auto;
+                /* Let the height adjust automatically to maintain aspect ratio */
+                max-width: 100%;
+                /* Ensure the image doesn't exceed the container width */
+            }
+
+            #SVGMain {
+                transform: scale(1.0) !important;
+                /* Additional styles for smaller screens */
+            }
+        }
+
+        .animationHeight {
+            height:
+                400vh;
+        }
+
+        #logo {
+            background-color: rgba(100, 150, 200, 0.5);
+            /* Set the background color with opacity */
+            /* You can adjust the RGBA values (100, 150, 200) to get your desired color */
+            /* The last value (0.5) represents the opacity level (0.0 to 1.0) */
+        }
+
         html {
             scroll-behavior: initial;
         }
@@ -382,10 +409,6 @@
             <div class="container nav w-container">
                 <div class="nav-menu">
                     <div class="navlink-div">
-                        <a href="#showreel" class="nav-link w-nav-link">Showreel</a>
-                        <div class="underline-nav"></div>
-                    </div>
-                    <div class="navlink-div">
                         <a href="#services" class="nav-link w-nav-link">Services</a>
                         <div class="underline-nav"></div>
                     </div>
@@ -403,14 +426,9 @@
                     <img src="https://assets-global.website-files.com/651159130b9d2e88495a611f/651ea7e2eb37698aecc7c736_drop%20down%20img.svg"
                         loading="eager" alt="drop aminmation" class="logo-drop-down" />
                     <div class="nav-wrapper">
-                        <a href="/" aria-current="page" class="nav-link mob w-nav-link w--current">Home</a>
-                        <a href="#" class="nav-link mob w-nav-link">Portfolio</a>
+                        <a href="#" aria-current="page" class="nav-link mob w-nav-link w--current">Home</a>
+                        <a href="#embedded" class="nav-link mob w-nav-link">Portfolio</a>
                         <a href="#services" class="nav-link mob w-nav-link">Services</a>
-                        <a href="#showreel" class="nav-link mob w-nav-link">Show reel</a>
-                        <div class="navlink-div right">
-                            <a href="#Our-work" class="nav-link w-nav-link">Our Work</a>
-                            <div class="underline-nav"></div>
-                        </div>
                         <div class="navlink-div right">
                             <a href="#logo" class="nav-link right w-nav-link">Clients</a>
                             <div class="underline-nav"></div>
@@ -449,7 +467,7 @@
                 </div>
                 <div id="w-node-_3b508b6c-3322-f28e-51cb-625e9bd78306-b43609ff"
                     data-w-id="3b508b6c-3322-f28e-51cb-625e9bd78306" style="opacity:0" class="hero-heading-wrapper">
-                    <h1 class="h1-heading mob">
+                    <h1 class="h1-heading mob" style="font-size: 36px;">
                         Welcome to Nexada<br />
                         ‍
                         <span class="bold">
@@ -470,7 +488,7 @@
                                 loading="eager" alt="Drop Down Arrow" class="arrow-img" />
                         </section>
                     </a>
-                    <a href="#second-section" class="link-block-btn hide w-inline-block">
+                    <a href="#embedded" class="link-block-btn hide w-inline-block">
                         <section data-w-id="7ce7b1bf-b5f5-61ad-9b58-14a1822ba563" style="opacity:0" class="button">
                             <img src="https://assets-global.website-files.com/651159130b9d2e88495a611f/651188b72f154915584acb38_Group%202.svg"
                                 loading="eager" alt="Drop Down Arrow" class="arrow-img" />
@@ -546,7 +564,7 @@
     <section id="services" class="section white-bg z-index overflow-hidden center-block">
         <div class="w-layout-blockcontainer container _40-bottom _70 w-container">
             <div class="heading-block">
-                <h3 class="h1-heading" style="line-height: 140px;">Unlock Your Digital Potential</h3>
+                <h3 class="services-heading">Unlock Your Digital Potential</h3>
             </div>
             <div class="services-wrapper">
                 <div class="service-content-wrapper">
@@ -765,7 +783,7 @@
             </div>
         </div>
     </section> -->
-    <!-- <section id="logo" class="section overflow-hidden white-bg padding">
+    <section id="logo" class="section overflow-hidden white-bg padding">
         <div class="w-layout-blockcontainer container no-padding banner hide w-container">
             <div class="heading-block bottom">
                 <h3 class="h3-heading">Our clients</h3>
@@ -859,7 +877,7 @@
             <div class="blur-banner"></div>
             <div class="blur-banner right"></div>
         </div>
-    </section> -->
+    </section>
     <!-- <section id="Our-work" data-w-id="dcdbc2e1-95bb-5e35-c0b9-86169dbb8458" class="section black scrolling">
         <div id="w-node-dcdbc2e1-95bb-5e35-c0b9-86169dbb84f1-b43609ff" class="line-2"></div>
         <div class="w-layout-blockcontainer container _0-pad w-container">
@@ -1488,7 +1506,7 @@
         <div class="footer-wrapper-1">
             <div class="w-layout-blockcontainer container image w-container" style="text-align: center;">
                 <div class="footer-img-block">
-                    <div class="" style="font-size: 1200%; color: #fff; line-height: 120px; margin-top: 30px;">
+                    <div class="" style="font-size: 700%; color: #fff; line-height: 120px; margin-top: 30px;">
                         Nexada
                     </div>
                 </div>
@@ -1503,7 +1521,7 @@
                             </div>
                             <div class="footer-link-wrapper">
                                 <div class="footer-link-block">
-                                    <a href="#second-section" class="footer-link">About</a>
+                                    <a href="#embedded" class="footer-link">About</a>
                                 </div>
                                 <div class="footer-link-block">
                                     <a href="#services" class="footer-link">Services</a>
@@ -1521,21 +1539,18 @@
                                     <a href="#Our-work" class="footer-link">Our work</a>
                                 </div>
                                 <div class="footer-link-block">
-                                    <a href="#showreel" class="footer-link">Showreel</a>
+                                    <a href="#logo" class="footer-link">Clients</a>
                                 </div>
                                 <div class="footer-link-block social">
-                                    <a href="https://www.facebook.com/designadepk?mibextid=9R9pXO"
-                                        class="social-link w-inline-block">
+                                    <a href="#" class="social-link w-inline-block">
                                         <img src="https://assets-global.website-files.com/651159130b9d2e88495a611f/654238d57de85a0cfbf3f621_Group%203524.svg"
                                             loading="lazy" alt="facebook logo" class="socail-icon" />
                                     </a>
-                                    <a href="https://instagram.com/designadepk?igshid=MzRlODBiNWFlZA=="
-                                        class="social-link instagram w-inline-block">
+                                    <a href="#" class="social-link instagram w-inline-block">
                                         <img src="https://assets-global.website-files.com/651159130b9d2e88495a611f/654238d5fdc03c4eaa9ab3d7_Group%203525.svg"
                                             loading="lazy" alt="instagaram icon" class="socail-icon" />
                                     </a>
-                                    <a href="https://www.behance.net/DesignadePakistan?tracking_source=search_users|Design%20Ade%20Pakistan"
-                                        class="social-link w-inline-block">
+                                    <a href="#" class="social-link w-inline-block">
                                         <img src="https://assets-global.website-files.com/651159130b9d2e88495a611f/65435f1cbd0f56d9189facdb_behance.svg"
                                             loading="lazy" alt="behance logo" class="socail-icon" />
                                     </a>
