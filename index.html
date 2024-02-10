@@ -392,6 +392,41 @@
         .w-webflow-badge {
             filter: grayscale(100%);
         }
+
+        .input-wrapper {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="subscription_email"] {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input[type="subscription_email"]:focus {
+            border-color: #007bff;
+        }
+
+        .submit-button {
+            background-color: #19191a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: auto;
+        }
     </style>
 </head>
 
@@ -480,6 +515,7 @@
                             <br />Empowering Digital Success Together
                         </span>
                     </h2>
+
                 </div>
                 <div class="main-block">
                     <a href="#embedded" class="link-block-btn w-inline-block">
@@ -495,6 +531,13 @@
                         </section>
                     </a>
                 </div>
+                <form action="https://formspree.io/f/mjvnynok" method="POST" class="email-form">
+                    <div class="input-wrapper">
+                        <input type="subscription_email" id="subscription_email" name="subscription_email"
+                            placeholder="Enter your email" required>
+                    </div>
+                    <button type="submit" class="submit-button">Send</button>
+                </form>
             </div>
         </div>
     </section>
@@ -575,10 +618,10 @@
                         <div class="hover-mover-wrapper">
                             <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none"
                                 class="hover-mover">
-                                <img src="DM.jpeg" alt="Digital Marketing" class="hover-img" />
+                                <img src="SEO.webp" alt="Digital Marketing" class="hover-img" />
                             </div>
                         </div>
-                        <div class="text-block">Digital Marketing</div>
+                        <div class="text-block">Local SEO</div>
                     </div>
                     <div data-w-id="d7cdaf09-53ea-ba3b-a9eb-4e831639c1ae" class="services-text-wrapper _5">
                         <div class="numbering-wrapper">
@@ -587,21 +630,21 @@
                         <div class="hover-mover-wrapper">
                             <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none"
                                 class="hover-mover">
-                                <img src="DS.webp" alt="Digital Services" class="hover-img" />
+                                <img src="OR.png" alt="Digital Services" class="hover-img" />
                             </div>
                         </div>
-                        <div class="text-block">Digital Services</div>
+                        <div class="text-block">Online Reputation</div>
 
                     </div>
                     <div data-w-id="3d3d3b4c-bdb7-1e9a-08a8-03fcbd515af9" class="services-text-wrapper _10">
                         <div class="numbering-wrapper">
                             <div class="numbering">3</div>
                         </div>
-                        <div class="text-block">Social Media</div>
+                        <div class="text-block">Web design</div>
                         <div class="hover-mover-wrapper">
                             <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none"
                                 class="hover-mover">
-                                <img src="SM.png" alt="Social Media" class="hover-img" />
+                                <img src="WD.png" alt="Social Media" class="hover-img" />
                             </div>
                         </div>
                     </div>
@@ -609,11 +652,11 @@
                         <div class="numbering-wrapper">
                             <div class="numbering">4</div>
                         </div>
-                        <div class="text-block">SEO Excellence</div>
+                        <div class="text-block">Web Development</div>
                         <div class="hover-mover-wrapper">
                             <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none"
                                 class="hover-mover">
-                                <img src="SEO.webp" alt="SEO Excellence" class="hover-img" />
+                                <img src="WEB.jpeg" alt="SEO Excellence" class="hover-img" />
                             </div>
                         </div>
                     </div>
@@ -624,10 +667,10 @@
                         <div class="hover-mover-wrapper">
                             <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none"
                                 class="hover-mover">
-                                <img src="WEB.jpeg" alt="Web Development" class="hover-img" />
+                                <img src="SM.png" alt="Web Development" class="hover-img" />
                             </div>
                         </div>
-                        <div class="text-block">Web Development</div>
+                        <div class="text-block">Social Media</div>
                     </div>
                 </div>
             </div>
