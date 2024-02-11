@@ -223,12 +223,11 @@
             'optimize_id': 'GTM-MCLV7MMB'
         });
     </script>
+    <!-- .section {
+    position: relative;
+    overflow: hidden;
+    } -->
     <style>
-        .section {
-            position: relative;
-            overflow: hidden;
-        }
-
         .video-container {
             position: relative;
             width: 100%;
@@ -327,14 +326,10 @@
         @media screen and (max-width: 768px) {
             .text-block {
                 font-size: 30px;
-                /* Adjust font size for smaller screens */
                 line-height: 60px;
-                /* Adjust line height accordingly */
-                /* Additional styles for smaller screens */
             }
 
             .services-heading {
-
                 line-height: 80px;
                 font-size: 40px;
                 margin-top: 0;
@@ -392,41 +387,6 @@
         .w-webflow-badge {
             filter: grayscale(100%);
         }
-
-        .input-wrapper {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        input[type="subscription_email"] {
-            width: 50%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            outline: none;
-        }
-
-        input[type="subscription_email"]:focus {
-            border-color: #007bff;
-        }
-
-        .submit-button {
-            background-color: #19191a;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin-top: auto;
-        }
     </style>
 </head>
 
@@ -443,6 +403,10 @@
             role="banner" class="navbar w-nav">
             <div class="container nav w-container">
                 <div class="nav-menu">
+                    <div class="navlink-div">
+                        <a href="#showreel" class="nav-link w-nav-link">Showreel</a>
+                        <div class="underline-nav"></div>
+                    </div>
                     <div class="navlink-div">
                         <a href="#services" class="nav-link w-nav-link">Services</a>
                         <div class="underline-nav"></div>
@@ -464,6 +428,11 @@
                         <a href="#" aria-current="page" class="nav-link mob w-nav-link w--current">Home</a>
                         <a href="#embedded" class="nav-link mob w-nav-link">Portfolio</a>
                         <a href="#services" class="nav-link mob w-nav-link">Services</a>
+                        <a href="#showreel" class="nav-link mob w-nav-link">Show reel</a>
+                        <div class="navlink-div right">
+                            <a href="#Our-work" class="nav-link w-nav-link">Our Work</a>
+                            <div class="underline-nav"></div>
+                        </div>
                         <div class="navlink-div right">
                             <a href="#logo" class="nav-link right w-nav-link">Clients</a>
                             <div class="underline-nav"></div>
@@ -515,33 +484,31 @@
                             <br />Empowering Digital Success Together
                         </span>
                     </h2>
-
                 </div>
                 <div class="main-block">
-                    <a href="#embedded" class="link-block-btn w-inline-block">
+                    <a href="#form" class="link-block-btn w-inline-block">
                         <section data-w-id="24c088b8-bd12-a772-eff3-e6ed8cf256b2" style="opacity:0" class="button">
-                            <img src="https://assets-global.website-files.com/651159130b9d2e88495a611f/651188b72f154915584acb38_Group%202.svg"
-                                loading="eager" alt="Drop Down Arrow" class="arrow-img" />
+                            <div style="text-align: center;">
+                                <h1 style="color: black;">Work with Us!</h1>
+                                <img src="https://assets-global.website-files.com/651159130b9d2e88495a611f/651188b72f154915584acb38_Group%202.svg"
+                                    loading="eager" alt="Drop Down Arrow" class="arrow-img" />
+                            </div>
                         </section>
                     </a>
-                    <a href="#embedded" class="link-block-btn hide w-inline-block">
+                    <a href="#form" class="link-block-btn hide w-inline-block">
                         <section data-w-id="7ce7b1bf-b5f5-61ad-9b58-14a1822ba563" style="opacity:0" class="button">
-                            <img src="https://assets-global.website-files.com/651159130b9d2e88495a611f/651188b72f154915584acb38_Group%202.svg"
-                                loading="eager" alt="Drop Down Arrow" class="arrow-img" />
+                            <div style="text-align: center;">
+                                <h1 style="color: black;">Work with Us!</h1>
+                                <img src="https://assets-global.website-files.com/651159130b9d2e88495a611f/651188b72f154915584acb38_Group%202.svg"
+                                    loading="eager" alt="Drop Down Arrow" class="arrow-img" />
+                            </div>
                         </section>
                     </a>
                 </div>
-                <form action="https://formspree.io/f/mjvnynok" method="POST" class="email-form">
-                    <div class="input-wrapper">
-                        <input type="subscription_email" id="subscription_email" name="subscription_email"
-                            placeholder="Enter your email" required>
-                    </div>
-                    <button type="submit" class="submit-button">Send</button>
-                </form>
             </div>
         </div>
     </section>
-    <section id="embedded" class="section overflow-hidden mob">
+    <section id=" embedded" class="section overflow-hidden mob">
         <div class="html-embed w-embed">
             <div class="animationHeight">
                 <div class="canvasParent">
@@ -553,7 +520,8 @@
                                 text-anchor="middle">Why Nexada?</text>
                             <!-- Shorter message -->
                             <text x="50%" y="80" font-family="Arial" font-size="20" fill="black"
-                                text-anchor="middle">Innovative Solutions, Digital Excellence, Client Success.</text>
+                                text-anchor="middle">Innovative Solutions, Digital Excellence,
+                                Client Success.</text>
                         </svg>
                     </div>
                     <canvas class="draw"></canvas>
@@ -561,14 +529,14 @@
             </div>
         </div>
     </section>
-    <!-- <div data-w-id="607126f3-060b-07a3-66da-daf602957223" class="hero-wrapper-div">
+    <!-- Video Start -->
+    <div data-w-id="607126f3-060b-07a3-66da-daf602957223" class="hero-wrapper-div">
         <div data-poster-url="https://assets-global.website-files.com/651159130b9d2e88495a611f/6540f9c8552fcf0a9b94ebe8_final final Final animation 3-poster-00001.jpg"
             data-video-urls="https://assets-global.website-files.com/651159130b9d2e88495a611f/6540f9c8552fcf0a9b94ebe8_final final Final animation 3-transcode.mp4,https://assets-global.website-files.com/651159130b9d2e88495a611f/6540f9c8552fcf0a9b94ebe8_final final Final animation 3-transcode.webm"
             data-autoplay="true" data-loop="true" data-wf-ignore="true"
             class="video-hide w-background-video w-background-video-atom">
-            <video id="fb465652-058d-2763-d70d-d8fd0b2ba890-video" autoplay="" loop=""
-                style="background-image:url(&quot;https://assets-global.website-files.com/651159130b9d2e88495a611f/6540f9c8552fcf0a9b94ebe8_final final Final animation 3-poster-00001.jpg&quot;)"
-                muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+            <video id="fb465652-058d-2763-d70d-d8fd0b2ba890-video" autoplay="" loop="" muted="" playsinline=""
+                data-wf-ignore="true" data-object-fit="cover">
                 <source
                     src="https://assets-global.website-files.com/651159130b9d2e88495a611f/6540f9c8552fcf0a9b94ebe8_final final Final animation 3-transcode.mp4"
                     data-wf-ignore="true" />
@@ -595,14 +563,15 @@
                                 .video-border {
                                     border-radius: 0px;
                                 }
+                            }
                         </style>
                     </div>
                 </div>
             </div>
         </article>
         <div class="spacer"></div>
-    </div> -->
-    <!-- Divider -->
+    </div>
+    <!-- Video End -->
     <div style="width: 100%; height: 3px; background-color: #000;"></div>
     <section id="services" class="section white-bg z-index overflow-hidden center-block">
         <div class="w-layout-blockcontainer container _40-bottom _70 w-container">
@@ -681,7 +650,8 @@
             <div class="div-sample"></div>
         </div>
     </section>
-    <!-- <section id="showreel" data-w-id="d4f2921f-df6b-285c-3542-45d79384ec7f" class="section black _100vh">
+    <!-- TV Start -->
+    <section id="showreel" data-w-id="d4f2921f-df6b-285c-3542-45d79384ec7f" class="section black _100vh">
         <div data-w-id="809db633-b4ab-f7cc-cc62-2079d8c922ea" class="tv-wrapper">
             <div data-w-id="cf5d37f3-d25c-fbd8-1571-f26bb4399397" class="play-pause-wrapper">
                 <div data-w-id="1f4b0680-ec34-4ef4-b16c-63e3ad36020f" style="display:block"
@@ -825,7 +795,8 @@
                     loading="eager" alt="candle " class="nail-img _4" />
             </div>
         </div>
-    </section> -->
+    </section>
+    <!-- TV End -->
     <section id="logo" class="section overflow-hidden white-bg padding">
         <div class="w-layout-blockcontainer container no-padding banner hide w-container">
             <div class="heading-block bottom">
@@ -921,7 +892,8 @@
             <div class="blur-banner right"></div>
         </div>
     </section>
-    <!-- <section id="Our-work" data-w-id="dcdbc2e1-95bb-5e35-c0b9-86169dbb8458" class="section black scrolling">
+    <!-- Our Work Start -->
+    <section id="Our-work" data-w-id="dcdbc2e1-95bb-5e35-c0b9-86169dbb8458" class="section black scrolling">
         <div id="w-node-dcdbc2e1-95bb-5e35-c0b9-86169dbb84f1-b43609ff" class="line-2"></div>
         <div class="w-layout-blockcontainer container _0-pad w-container">
             <div class="w-layout-grid case-study-grid-2">
@@ -982,9 +954,8 @@
                                 data-video-urls="https://assets-global.website-files.com/651159130b9d2e88495a611f/653b8be687df35fe63b16c04_MEI Logo-03_11-transcode.mp4,https://assets-global.website-files.com/651159130b9d2e88495a611f/653b8be687df35fe63b16c04_MEI Logo-03_11-transcode.webm"
                                 data-autoplay="true" data-loop="true" data-wf-ignore="true"
                                 class="mob-video w-background-video w-background-video-atom">
-                                <video id="9b4796ee-1ebd-199d-41dd-41eefc6642ac-video" autoplay="" loop=""
-                                    style="background-image:url(&quot;https://assets-global.website-files.com/651159130b9d2e88495a611f/653b8be687df35fe63b16c04_MEI Logo-03_11-poster-00001.jpg&quot;)"
-                                    muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                                <video id="9b4796ee-1ebd-199d-41dd-41eefc6642ac-video" autoplay="" loop="" muted=""
+                                    playsinline="" data-wf-ignore="true" data-object-fit="cover">
                                     <source
                                         src="https://assets-global.website-files.com/651159130b9d2e88495a611f/653b8be687df35fe63b16c04_MEI Logo-03_11-transcode.mp4"
                                         data-wf-ignore="true" />
@@ -1295,9 +1266,8 @@
                                 data-video-urls="https://assets-global.website-files.com/651159130b9d2e88495a611f/653b8be687df35fe63b16c04_MEI Logo-03_11-transcode.mp4,https://assets-global.website-files.com/651159130b9d2e88495a611f/653b8be687df35fe63b16c04_MEI Logo-03_11-transcode.webm"
                                 data-autoplay="true" data-loop="true" data-wf-ignore="true"
                                 class="image-ab _1 w-background-video w-background-video-atom">
-                                <video id="298b25cc-50ef-6350-fcd2-8b0a4765a813-video" autoplay="" loop=""
-                                    style="background-image:url(&quot;https://assets-global.website-files.com/651159130b9d2e88495a611f/653b8be687df35fe63b16c04_MEI Logo-03_11-poster-00001.jpg&quot;)"
-                                    muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                                <video id="298b25cc-50ef-6350-fcd2-8b0a4765a813-video" autoplay="" loop="" muted=""
+                                    playsinline="" data-wf-ignore="true" data-object-fit="cover">
                                     <source
                                         src="https://assets-global.website-files.com/651159130b9d2e88495a611f/653b8be687df35fe63b16c04_MEI Logo-03_11-transcode.mp4"
                                         data-wf-ignore="true" />
@@ -1360,19 +1330,10 @@
                 </div>
             </div>
             <div class="_1080 w-embed">
-                <style>
-                    @media screen and (min-width: 1000px) and (max-width: 1080px) {
-                        .full-scroll-canvas {
-                            display: none;
-                        }
-
-                        .moving-content-div {
-                            display: block;
-                        }
-                </style>
             </div>
         </div>
-    </section> -->
+    </section>
+    <!-- Our Work End -->
     <section data-w-id="0fba43fe-d184-5c69-b016-7d7c2fe43519" class="section circle white-bg overflow-hidden">
         <div class="w-layout-blockcontainer container w-container">
             <div class="w-layout-grid cicle-grid">
@@ -1405,10 +1366,14 @@
                             </div>
                         </div>
                     </div>
-                    <div data-w-id="3e87e9d1-561e-f955-3c7a-5bc0f654ac2b" class="ciricle-div _2"></div>
-                    <div data-w-id="4b6f5e89-170f-b90b-3dbc-bab6f73688b4" class="ciricle-div _3"></div>
-                    <div data-w-id="2f7c2838-b826-c4cc-8e78-c8f8da78663f" class="ciricle-div _4"></div>
-                    <div data-w-id="ff6145f0-c3be-4ea9-5a18-ba5489d46c74" class="ciricle-div _5"></div>
+                    <div data-w-id="3e87e9d1-561e-f955-3c7a-5bc0f654ac2b" class="ciricle-div _2">
+                    </div>
+                    <div data-w-id="4b6f5e89-170f-b90b-3dbc-bab6f73688b4" class="ciricle-div _3">
+                    </div>
+                    <div data-w-id="2f7c2838-b826-c4cc-8e78-c8f8da78663f" class="ciricle-div _4">
+                    </div>
+                    <div data-w-id="ff6145f0-c3be-4ea9-5a18-ba5489d46c74" class="ciricle-div _5">
+                    </div>
                 </div>
             </div>
         </div>
@@ -1437,37 +1402,43 @@
                                 data-wf-element-id="5ce25434-180c-45ff-d34a-693111e154f5">
                                 <div class="flex-check-box">
                                     <label class="w-checkbox form-check-box-wrapper">
-                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div>
+                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox">
+                                        </div>
                                         <input id="Branding" type="checkbox" name="Branding" data-name="Branding"
                                             style="opacity:0;position:absolute;z-index:-1" />
                                         <span class="checkbox-label w-form-label" for="Branding">Local SEO</span>
                                     </label>
                                     <label class="w-checkbox form-check-box-wrapper">
-                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div>
+                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox">
+                                        </div>
                                         <input id="Photography" type="checkbox" name="Photography"
                                             data-name="Photography" style="opacity:0;position:absolute;z-index:-1" />
                                         <span class="checkbox-label w-form-label" for="Photography">Online
                                             Reputation</span>
                                     </label>
                                     <label class="w-checkbox form-check-box-wrapper">
-                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div>
+                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox">
+                                        </div>
                                         <input id="social-media" type="checkbox" name="social-media"
                                             data-name="social media" style="opacity:0;position:absolute;z-index:-1" />
                                         <span class="checkbox-label w-form-label" for="social-media">Website
                                             design</span>
                                     </label>
                                     <label class="w-checkbox form-check-box-wrapper">
-                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div>
+                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox">
+                                        </div>
                                         <input id="videography" type="checkbox" name="videography"
                                             data-name="videography" style="opacity:0;position:absolute;z-index:-1" />
                                         <span class="checkbox-label w-form-label" for="videography">Web
                                             development</span>
                                     </label>
                                     <label class="w-checkbox form-check-box-wrapper">
-                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div>
+                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox">
+                                        </div>
                                         <input id="UI-UX" type="checkbox" name="UI-UX" data-name="UI/UX"
                                             style="opacity:0;position:absolute;z-index:-1" />
-                                        <span class="checkbox-label w-form-label" for="UI-UX">Social Media</span>
+                                        <span class="checkbox-label w-form-label" for="UI-UX">Social
+                                            Media</span>
                                     </label>
                                 </div>
                                 <input class="text-field w-input" maxlength="256" name="name" data-name="Name"
@@ -1518,7 +1489,8 @@
                                                 style="opacity:0;position:absolute;z-index:-1"
                                                 value="more than 100 employees" />
                                             <span class="radio-button-label w-form-label p-5"
-                                                for="more-than-100-employees">more than 50 Staff</span>
+                                                for="more-than-100-employees">more than 50
+                                                Staff</span>
                                         </label>
                                     </div>
                                     <div class="form-flex-div flex-top">
@@ -1603,7 +1575,8 @@
                     </div>
                     <div id="w-node-c7cdbd2b-67fe-d293-77cc-cfc7cd88f8d7-cd88f8ad" class="footer-email-block">
                         <div class="footer-heading-div">
-                            <div class="footer-heading white">Get valuable strategy, culture and brand insights straight
+                            <div class="footer-heading white">Get valuable strategy, culture and
+                                brand insights straight
                                 to your inbox</div>
                         </div>
                         <div class="newsletter-block w-form">
@@ -1624,8 +1597,10 @@
                             </div>
                         </div>
                         <div class="footer-text hide">
-                            By signing up to receive emails from <span class="bold-grey">My site</span>
-                            , you agree to our Privacy Policy. We treat your info responsibly. Unsubscribe anytime.
+                            By signing up to receive emails from <span class="bold-grey">My
+                                site</span>
+                            , you agree to our Privacy Policy. We treat your info responsibly.
+                            Unsubscribe anytime.
                         </div>
                     </div>
                 </div>
